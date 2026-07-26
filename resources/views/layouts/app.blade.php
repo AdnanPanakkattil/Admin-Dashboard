@@ -26,25 +26,28 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/Navbar.css') }}">
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+
+
 </head>
 
 <body>
 
     <div class="wrapper" id="mainWrapper">
 
-         <!-- Sidebar -->
+        <!-- Sidebar -->
         @include('partials.sidebar')
 
-         <!-- Main Content -->
+        <!-- Main Content -->
         <main class="main-content">
 
-             <!-- Navbar -->
+            <!-- Navbar -->
             @include('partials.navbar')
 
-             <!-- Page Content -->
+            <!-- Page Content -->
             <div class="page-content">
                 @yield('content')
             </div>
@@ -56,7 +59,7 @@
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>
